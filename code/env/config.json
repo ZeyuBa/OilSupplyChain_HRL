@@ -1,0 +1,12 @@
+{
+  "Oil_Control": {
+    "class_literal": "OilControlEnv",
+    "n_player": -1,
+    "max_step": 30,
+    "game_name": "oil control",
+    "is_obs_continuous": true,
+    "is_act_continuous": true,
+    "agent_nums": [ -1 ],
+    "obs_type": [ "dict" ]
+  }
+}

@@ -1,0 +1,38 @@
+algo: ppo2
+env_parameters:
+  scenario: 'Oil_Control'
+  config_path: "env/real_data_sy/"
+  silence: false
+  plot: false
+  render: false
+  model_id: 1
+  marl: false
+  n_player: 1
+  obs_continuous: true
+  obs_space: 298
+  normalize: true
+  action_continuous: true
+  action_space: 122
+hyper_parameters:
+  gamma: 0.99
+  lamda: 0.97
+  batch_size: 128
+  hidden_size: 128
+  a_lr: 0.0001
+  c_lr: 0.0001
+  clip_param: 0.2
+  max_grad_norm: 0.5
+  val_coef: 0.5
+  ent_coef: 0.01
+  update_freq: 10
+  buffer_capacity: 100000
+  tanh: True
+  action_high: 1
+  action_low: 0
+training_parameters:
+  train: true
+  device: 'gpu'
+  max_episodes: 100000
+  save_interval: 1000
+  learn_terminal: false
+  learn_freq: 512

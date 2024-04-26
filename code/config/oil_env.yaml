@@ -1,0 +1,10 @@
+name: oil_env
+algo: any
+env_parameters:
+  scenario: 'Oil_Control'
+  config_path: "../../real_data_sy/"
+  silence: false
+  plot: false
+  render: false
+  model_id: 1
+
